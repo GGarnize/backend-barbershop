@@ -57,6 +57,9 @@ module.exports = {
       user_type: {
         type: Sequelize.ENUM,
         values: ['admin', 'client', 'professional'],
+      },
+      chat_id: {
+        type: Sequelize.STRING(255)
       }
     });
   },
